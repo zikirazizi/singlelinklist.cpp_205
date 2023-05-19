@@ -143,48 +143,5 @@ int main() {
 				system("pause");
 				system("cls");
 				break;
-			case 2:
-				if (listEmpty())
-				{
-					cout << "List kosong" << endl;
-					system("pause");
-					system("cls");
-					break;
-				}
-				int nim;
-				cout << "Masukan NIM: ";
-				cin >> nim;
-				if (deleteNode(nim)) {
-					cout << "nim: " << nim << "berhasil dihapus" << endl;
-					system("pause");
-					system("cls");
-				}
-				else
-					cout << "Data tidak ditemukan" << endl; \
-					break;
-			case 3:
-				traverse();
-				break;
-			case 4:
-				searchData();
-				break;
-			case 5:
-				break;
-			default:
-				cout << "Pilihan tidak ada" << endl;
-				break;
-			}
-
-		}
-		catch (exception e)
-		{
-			cout << "Terjadi kesalahan" << endl;
-		}
-	} while (pilihan != 5);
-}
-
-
-
-
-
+			
 
